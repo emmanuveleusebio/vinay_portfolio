@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eusebio</title>
+  <link rel="icon" href="/img/—Pngtree—streaming binary code matrix vector_5140251.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;family=Nunito&amp;family=Satisfy&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      -webkit-tap-highlight-color: transparent;
+      box-sizing: border-box;
+    }
+
+    a,
+    button,
+    i {
+      cursor: pointer;
+    }
+
+    .total-content {
+      background: #f1eded;
+    }
+
+    .container {
+      width: 100%;
+      margin: auto;
+    }
+
+    .header {
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      font-family: 'Satisfy', cursive;
+      margin: 0;
+    }
+
+    .header ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      gap: 30px;
+      text-decoration: none;
+      align-items: center;
+    }
+
+    .header ul li a {
+      text-decoration: none;
+      color: #FFD9D1;
+    }
+
+    .header ul li {
+      display: flex;
+      text-decoration: none;
+      color: #8b7e7e;
+      font-weight: 600;
+    }
+
+    .header ul li a:hover {
+      color: #000000;
+    }
+
+    .header .download-cv {
+      margin: 0;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      color: #F87474;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      border: .1rem solid #F87474;
+      border-radius: .5rem;
+      background-color: #FEF4F2;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    .header .download-cv:hover {
+      background: linear-gradient(90deg, #F87474, #D76060);
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .home {
+      display: flex;
+      padding: 60px 0;
+    }
+
+    .home-content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .home-content p {
+      margin: 0;
+      padding-top: 0;
+    }
+
+    .home-img {
+      width: 50%;
+    }
+
+    .heading {
+      color: #FFD9D1;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Montserrat';
+      line-height: 2rem;
+    }
+
+    .title {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      color: #0D0F16;
+    }
+
+    .name {
+      font-family: 'Satisfy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 5.5rem;
+      color: #000000;
+    }
+
+    .name span {
+      color: #FFD9D1;
+    }
+
+    .description {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 150%;
+      margin: 0 auto 2rem;
+      color: #0D0F16;
+    }
+
+    .whatsapp {
+      text-decoration: none;
+      font-family: 'Montserrat';
+      line-height: 3.2rem;
+      font-weight: 500;
+      font-size: 1rem;
+      color: white;
+      background: linear-gradient(90deg, #F26C4F 0%, #F26C4F 81%);
+      border-radius: 10px;
+      padding: 0 25px;
+      cursor: pointer;
+      max-width: 160px;
+      display: flex;
+      justify-content: center;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    .whatsapp:hover {
+      background: linear-gradient(90deg, #fa6767, #c15454);
+      color: white;
+      border-color: #D76060;
+    }
+
+    .home-img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .img-container {
+      background: linear-gradient(#a52a2a29, #212121);
+      /* backdrop-filter: blur(5px) !important; */
+      width: 400px;
+      height:400px;
+      border-radius: 45px;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-container img {
+      /* max-width: 20rem;
+      transition: transform 0.5s ease; */
+      height: 100%;
+      width: 100%;
+      /* background-color: red; */
+    }
+
+    .img-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .home-icon {
+      padding-top: 20px;
+      display: flex;
+      gap: 20px;
+      font-size: 30px;
+      border-radius: 50%;
+    }
+
+    .project-page {
+      background: #fffefe;
+      padding: 60px 0;
+    }
+
+    /* Enhanced Project Scroll Section */
+    .projects-img {
+      display: flex;
+      gap: 30px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 30px 0;
+      scroll-behavior: smooth;
+      position: relative;
+    }
+
+    .projects {
+      position: relative;
+    }
+
+    .projects-img::-webkit-scrollbar {
+      height: 12px;
+    }
+
+    .projects-img::-webkit-scrollbar-track {
+      background: linear-gradient(90deg, #f0f0f0, #e0e0e0);
+      border-radius: 20px;
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects-img::-webkit-scrollbar-thumb {
+      background: linear-gradient(90deg, #F87474, #D76060);
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(248, 116, 116, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .projects-img::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(90deg, #D76060, #B85050);
+      box-shadow: 0 4px 20px rgba(248, 116, 116, 0.5);
+    }
+
+    .layer {
+      position: relative;
+      flex: 0 0 auto;
+      width: 350px;
+      height: 80vh;
+      overflow: hidden;
+      border-radius: 30px;
+      box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.15),
+        0 4px 20px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+      cursor: pointer;
+      background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    }
+
+    .layer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: 1;
+      border-radius: 30px;
+    }
+
+    .layer:hover::before {
+      opacity: 1;
+      animation: shimmer 1.5s ease-in-out;
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translateX(-100%) rotate(45deg);
+      }
+
+      100% {
+        transform: translateX(400%) rotate(45deg);
+      }
+    }
+
+    .layer:hover {
+      transform: translateY(-15px) scale(1.02);
+      box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.25),
+        0 10px 40px rgba(248, 116, 116, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+
+    .layer img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      border-radius: 30px;
+    }
+
+    .layer:hover img {
+      transform: scale(1.08);
+      filter: brightness(1.1) contrast(1.05);
+    }
+
+    .project-git {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      opacity: 0;
+      transition: all 0.4s ease;
+    }
+
+    .layer:hover .project-git {
+      display: flex;
+      opacity: 1;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .project-git a,
+    .project-git p {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 25px;
+      background: linear-gradient(135deg, #F87474, #D76060);
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 8px 25px rgba(248, 116, 116, 0.4);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .project-git a:hover,
+    .project-git p:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(248, 116, 116, 0.6);
+      background: linear-gradient(135deg, #D76060, #B85050);
+    }
+
+    .service-page {
+      padding: 60px 0;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .service-box {
+      width: 300px;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .service-box:hover {
+      transform: scale(1.05);
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .service-box img,
+    .service-box i {
+      width: 40px;
+      padding-bottom: 30px;
+    }
+
+    .service-box i {
+      color: rgb(230, 130, 67);
+      font-size: 25px;
+    }
+
+    .skill-page {
+      padding: 70px 0;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .colorDiv {
+      background: linear-gradient(135deg, #8e2de2, #ffffff);
+    }
+
+    .skill-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      border-radius: 20px;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .skill-box:hover {
+      transform: scale(1.05);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 16px;
+    }
+
+    .skill-box p {
+      font-family: 'Arial', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .skill-box img {
+      width: 5rem;
+    }
+
+    .about-page {
+      padding: 80px 0;
+    }
+
+    .about {
+      display: flex;
+    }
+
+    .about-content p {
+      margin: 0;
+    }
+
+    .about-content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .about-description {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.15rem;
+      margin: 0 auto 2rem;
+      color: #0D0F16;
+    }
+
+    .about-btn {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .my-cv {
+      text-decoration: none;
+      color: #F87474;
+      border: 1px solid #F87474;
+      padding: 13px 20px;
+      border-radius: 10px;
+    }
+
+    .about-img {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-img img {
+      width: 60%;
+    }
+
+    .connect-page {
+      padding: 80px 0;
+    }
+
+    .connect-content {
+      max-width: 50%;
+    }
+
+    .connect-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .email {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .email img {
+      width: 60px;
+    }
+
+    .connect-page {
+      background: white;
+    }
+
+    .connect {
+      display: flex;
+    }
+
+    .connect-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .connect-form input,
+    textarea {
+      display: flex;
+      width: 100%;
+      border-radius: 15px;
+      border: 1px solid rgb(150, 145, 145);
+      padding: 10px 10px;
+      background: #f1eded;
+    }
+
+    .connect-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 60%;
+    }
+
+    .connect-form textarea {
+      height: 200px;
+    }
+
+    .form-gap {
+      gap: 20px;
+    }
+
+    .send-mes {
+      background: #F26C4F;
+      padding: 10px 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      max-width: 200px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      height: 100vh;
+      width: 300px;
+      visibility: hidden;
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .hamburger-menu ul {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 0;
+      width: 100%;
+      margin: 0;
+      gap: 0;
+    }
+
+    .hamburger-menu ul li {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 15px 0;
+    }
+
+    .hamburger-menu ul li:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .hamburger-menu a {
+      max-width: 60%;
+    }
+
+    .header input {
+      display: none;
+    }
+
+    .header label {
+      display: none;
+    }
+
+    #hamburger:checked+.hamburger-menu {
+      transform: translateX(0);
+      left: 0;
+      visibility: visible;
+      opacity: 1;
+    }
+
+.swipe {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #F87474, #D76060);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+        0 8px 25px rgba(248, 116, 116, 0.3),
+        0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: absolute;
+    top: 60%;
+    right: 30px;
+    transform: translateY(-50%);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.swipe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.swipe:hover::before {
+    opacity: 1;
+}
+
+.swipe:hover {
+    transform: translateY(-50%) scale(1.15);
+    background: linear-gradient(135deg, #D76060, #B85050);
+    box-shadow: 
+        0 15px 40px rgba(248, 116, 116, 0.4),
+        0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.swipe:active {
+    transform: translateY(-50%) scale(1.05);
+    transition: all 0.1s ease;
+}
+
+.swipe .arrow {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.swipe:hover .arrow {
+    transform: translateX(3px);
+    color: #ffffff;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Pulse animation for attention */
+.swipe {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 
+            0 8px 25px rgba(248, 116, 116, 0.3),
+            0 4px 15px rgba(0, 0, 0, 0.1),
+            0 0 0 0 rgba(248, 116, 116, 0.4);
+    }
+    50% {
+        box-shadow: 
+            0 8px 25px rgba(248, 116, 116, 0.3),
+            0 4px 15px rgba(0, 0, 0, 0.1),
+            0 0 0 15px rgba(248, 116, 116, 0);
+    }
+    100% {
+        box-shadow: 
+            0 8px 25px rgba(248, 116, 116, 0.3),
+            0 4px 15px rgba(0, 0, 0, 0.1),
+            0 0 0 0 rgba(248, 116, 116, 0);
+    }
+}
+
+/* Left swipe button variant */
+.swipe-left {
+    left: 30px;
+    right: auto;
+}
+
+.swipe-left .arrow {
+    transform: rotate(180deg);
+}
+
+.swipe-left:hover .arrow {
+    transform: rotate(180deg) translateX(3px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .swipe {
+        width: 50px;
+        height: 50px;
+        right: 20px;
+    }
+    
+    .swipe .arrow {
+        font-size: 20px;
+    }
+    
+    .swipe-left {
+        left: 20px;
+    }
+}
+
+
+
+
+/* Alternative modern style with icon */
+.swipe-modern {
+    width: 55px;
+    height: 55px;
+     top: 60%;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.15),
+        0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: absolute;
+   
+    transform: translateY(-50%);
+    border: 1px solid rgba(248, 116, 116, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.swipe-modern:hover {
+    transform: translateY(-50%) scale(1.1);
+    background: rgba(248, 116, 116, 0.1);
+    border-color: rgba(248, 116, 116, 0.4);
+    box-shadow: 
+        0 15px 40px rgba(248, 116, 116, 0.2),
+        0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.swipe-modern .arrow {
+    font-size: 22px;
+    color: #F87474;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.swipe-modern:hover .arrow {
+    transform: translateX(2px);
+    color: #D76060;
+}
+
+
+
+
+
+
+.arrow {
+      font-size: 2rem;
+      color: 'black';
+      user-select: none;
+    }
+
+
+    @media only screen and (max-width: 1215px) {
+      .img-container {
+        width: 77%;
+      }
+
+      .home-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .description {
+        width: 100%;
+      }
+
+      .home {
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      /* Keep horizontal scroll on tablet */
+      .projects-img {
+        gap: 25px;
+        padding: 25px 0;
+      }
+
+      .layer {
+        width: 300px;
+        height: 70vh;
+      }
+
+      .services-provides {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .services {
+        gap: 30px;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+      }
+
+      .about {
+        flex-direction: column;
+      }
+
+      .about-content,
+      .about-description {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about-img {
+        display: none;
+      }
+
+      .connect {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+      }
+
+      .footer-mail {
+        display: none;
+      }
+
+      .footer-icons {
+        justify-content: center;
+      }
+
+      .navbar {
+        display: none;
+      }
+
+      .header label {
+        display: block;
+      }
+
+      .form-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .connect-form form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    @media only screen and (max-width: 1005px) {
+      .form-input {
+        margin-bottom: 20px;
+      }
+
+      .img-container {
+        width: 96%;
+      }
+
+      .img-container img {
+        width: 11rem;
+      }
+
+      /* Keep horizontal scroll on mobile */
+      .projects-img {
+        gap: 20px;
+        padding: 20px 0;
+      }
+
+      .layer {
+        width: 250px;
+        height: 60vh;
+      }
+
+      .services {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="total-content">
+
+    <div class="colorDiv">
+      <div class="container">
+        <div class="header">
+          <h1>Vinay</h1>
+          <div class="navbar">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+            <a href="/cv/resume.pdf" download="vinay cv" class="download-cv">Download CV</a>
+
+          </div>
+          <label for="hamburger"><i class="fa-solid fa-bars"></i></label>
+          <input type="checkbox" id="hamburger">
+          <div class="hamburger-menu">
+
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+            <a href="/cv/resume.pdf" download="vinay cv" class="download-cv">Download CV</a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="home" id="home">
+          <div class="home-content">
+            <p class="heading">-INTRODUCTION</p>
+            <p class="title">Hi There!👋</p>
+            <p class="name">I'm <span>Vinay</span></p>
+            <p class="description">
+              Welcome to my creative space! I am Vinay, a self-taught graphic designer driven by a passion for visual
+              storytelling and innovation. Specializing in branding, digital illustration, and UI/UX design, I craft
+              visually compelling designs that communicate ideas effectively, combining creativity with a keen eye for
+              detail and design trends.
+            </p>
+            <a class="whatsapp" href="https://wa.me/+919030420422">Contact me !</a>
+            <div class="home-icon">
+              <a href="mailto:vinaya1439030@gmail.com">
+                <i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <div class="home-img">
+            <div class="img-container">
+              <img src="./img/person-removebg-preview.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-page" id="projects">
+      <div class="container">
+        <div class="projects">
+          <p class="heading">-PROJECTS</p>
+          <p class="title">FEATURED WORK</p>
+          <p class="description">
+            I love creating designs that inspire, solving visual challenges, and constantly learning to improve my
+            skills in the world of design.
+          </p>
+          <div class="projects-img">
+            <div class="layer">
+              <img src="./projects/p7.jpg" alt="" />
+
+            </div>
+            <div class="layer">
+              <img src="./projects/p1.jpg" alt="" />
+
+            </div>
+            <div class="layer">
+              <img src="./projects/p2.jpg" alt="" />
+
+            </div>
+            <div class="layer">
+              <img src="./projects/p3.jpg" alt="" />
+
+            </div>
+            <div class="layer">
+              <img src="./projects/p4.jpg" alt="" />
+
+            </div>
+            <div class="layer">
+              <img src="./projects/p5.jpg" alt="" />
+
+            </div>
+            <div class="layer">
+              <img src="./projects/p13.jpg" alt="" />
+
+            </div>
+            <div class="layer">
+              <img src="./projects/p18.jpg" alt="" />
+
+              <div class="layer">
+                <img src="./projects/p19.jpg" alt="" />
+
+              </div>
+            </div>
+          </div>
+          <div class="swipe">
+            <span class="arrow">&#8594;</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="colorDiv">
+        <div class="skill-page" id="skills">
+          <div class="container">
+            <p class="heading">-SKILLS</p>
+            <p class="title">AREA OF EXPERTISE</p>
+            <p class="description">
+              Let's bring your vision to life and collaborate to create stunning designs. I'll use my creativity and
+              skills to make your brand stand out.
+            </p>
+
+            <div class="skills">
+              <div class="skill-box">
+                <p>PRODUCT DESIGNING</p>
+              </div>
+              <div class="skill-box">
+                <p>PHOTO MANIPULATION</p>
+              </div>
+              <div class="skill-box">
+                <p>BROCHURES & BANNER EDITING</p>
+              </div>
+              <div class="skill-box">
+                <p>SOCIAL MEDIA POSTERS</p>
+              </div>
+              <div class="skill-box">
+                <p>MATTE PAINTING</p>
+              </div>
+              <div class="skill-box">
+                <p>BRANDING & IDENTITY</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="about-page" id="about">
+        <div class="container">
+          <div class="about">
+            <div class="about-content">
+              <p class="heading">-ABOUT</p>
+              <p class="title">ABOUT ME</p>
+              <p class="about-description">
+                I am a graphic designer, proficient in Product Designing, Photo Manipulation, Brochures & Banner
+                Editing,
+                Social Media Posters, Matte Painting, and Branding & Identity Design. After completing my ITI in
+                Electronics and an Advanced Programming in Visual Effects course, I discovered my true passion for
+                visual
+                storytelling and creative design solutions. I specialize in transforming ideas into visually compelling
+                designs that effectively communicate messages and elevate brands. My work blends creativity with
+                technical
+                skills, focusing on delivering high-quality designs for both digital and print media. I thrive on
+                continuous learning, experimenting with new design trends, and solving visual challenges. Over time,
+                I've
+                gained valuable hands-on experience by working on diverse design projects, helping clients build strong
+                visual identities and engaging content.
+              </p>
+              <div class="about-btn">
+                <a class="whatsapp" href="https://wa.me/+919030420422">HIRE ME</a>
+                <a href="/cv/resume.pdf" download="vinay cd" class="my-cv">Download CV</a>
+              </div>
+            </div>
+            <div class="about-img">
+              <img src="./img/working.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="connect-page">
+        <div class="container">
+          <div class="connect">
+            <div class="connect-content">
+              <p class="heading">-CONTACT</p>
+              <p class="title">GET IN TOUCH</p>
+              <p class="description">
+                I'm here and ready to bring your project ideas to life. Just a
+                click away!
+              </p>
+              <div class="connect-details">
+                <a href="mailto:vinaya1439030@gmail.com" class="email footer-mail">
+                  <img src="./img/email.png" alt="email me" />
+                  vinaya1439030@gmail.com</a>
+
+                <div class="home-icon footer-icons">
+                  <a href="mailto:vinaya1439030@gmail.com">
+                    <i class="fa-solid fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="connect-form">
+              <form action="javascript:void(0);">
+                <input type="text" id="name" placeholder="Full Name" />
+                <div class="row form-row">
+                  <div class="col-lg-6 form-input">
+                    <input type="text" id="email" placeholder="Email" />
+                  </div>
+                  <div class="col-lg-6 form-input">
+                    <input type="text" id="phone" placeholder="Phone No." />
+                  </div>
+                </div>
+                <textarea id="message" placeholder="Message"></textarea>
+                <button class="send-mes" onclick="sendMessage()">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
